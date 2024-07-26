@@ -24,6 +24,7 @@ o El campo de correo electrónico debe contener una dirección de correo válida
 • Funcionalidad del DOM:
 o Mostrar un mensaje de error si las credenciales son incorrectas.
 o Redirigir al usuario a la página principal al iniciar sesión correctamente.
+
 Formulario de Registro de Usuarios:
 • Campos:
 o Nombre Completo
