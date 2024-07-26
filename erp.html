@@ -30,41 +30,43 @@
     <nav class="sidebar bg-light p-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('students-reg.html')">Registro de Estudiantes</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="showSection('inicio')">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('payment.html')">Ingresar Pago</a>
+                <a class="nav-link" href="#" onclick="showSection('registro-estudiantes')">Registro de Estudiantes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('payment-type.html')">Medios de Pago</a>
+                <a class="nav-link" href="#" onclick="showSection('ingresar-pago')">Ingresar Pago</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('bills.html')">Emitir Recibos</a>
+                <a class="nav-link" href="#" onclick="showSection('medios-pago')">Medios de Pago</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('payment-history.html')">Historial de Pagos</a>
+                <a class="nav-link" href="#" onclick="showSection('emitir-recibo')">Emitir Recibos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="loadContent('pending-payments.html')">Pagos Pendientes</a>
+                <a class="nav-link" href="#" onclick="showSection('historial-pagos')">Historial de Pagos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('pagos-pendientes')">Pagos Pendientes</a>
             </li>
         </ul>
     </nav>
 
     <!--Inicio Workspace-->
     <div id="mainContent" class="container-fluid p-4">
-        <div id="dynamicContent">
-            <h1>Bienvenido</h1>
-            <p>Selecciona una opción del menú para ver el contenido.</p>
+        <div id="inicio" class="content-section active">
+            <h1>Inicio</h1>
+            <p>Bienvenido al sistema de administración y cobro de colegiatura de Los Andes School.</p>
         </div>
-    </div>
-    <!--Fin Workspace-->
-</div>
-<!--Inicio Footer--> 
-<footer class="container bg-body-secondary p-5">
-    <p class="float-end"><a href="#">Arriba</a></p>
-    <p>&copy; 1950–2024 Andes School &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> - Hecho con &#128155 & &#x1F4AA por JNIC</p>
-</footer> 
-<!--Fin Footer--> 
-<script src="assets/js/erp.js"></script>
-</body>
-</html>
+        <div id="registro-estudiantes" class="content-section">
+            <h1>Registro de Estudiantes</h1>
+            <p>Aquí puedes registrar nuevos estudiantes.</p>
+        </div>
+        <div id="ingresar-pago" class="content-section">
+            <h1>Ingresar Pago</h1>
+            <p>Aquí puedes ingresar pagos.</p>
+        </div>
+        <div id="medios-pago" class="content-section">
+            <
+
