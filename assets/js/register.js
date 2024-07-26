@@ -40,6 +40,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         alert('Usuario registrado correctamente.');
         document.getElementById('registrationForm').reset();
     }
+     // Redirigir después de 1 segundo para mostrar el mensaje de éxito
+     setTimeout(function() {
+        window.location.href = 'index.html';
+    }, 1000); // 1000 ms = 1 segundo
 });
 
 // Función para validar el formato del correo electrónico
