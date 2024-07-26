@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago</title>
+    <link rel="stylesheet" href="assets/css/payment-type.css">
+</head>
+<body>
+    <div class="container">
+        <div id="payment-method-container">
+            <h2>Método de Pago</h2>
+            <form id="payment-method-form">
+                <label for="payment-method">Seleccionar Método de Pago:</label>
+                <select id="payment-method" required>
+                    <option value="">Seleccione un método de pago</option>
+                    <option value="credit-card">Tarjeta de Crédito</option>
+                    <option value="debit-card">Tarjeta de Débito</option>
+                    <option value="bank-transfer">Transferencia Bancaria</option>
+                    <option value="Cash">Pago en Efectivo</option>
+                </select>
+
+                <div id="card-details" style="display: none;">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name"><p></p>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname">
+                    <p></p>
+                    <label for="card-number"><p> Número de Tarjeta:</label>
+                    <input type="text" id="card-number">
+                    <p></p>
+                    <label for="expiry-date"><br> Fecha de Vencimiento:</label>
+                    <input type="month" id="expiry-date">
+                    <label for="CV"><br>CV</label>
+                    <input type="text" id="CV">
+
+                    <!-- Imagen de tarjeta de crédito -->
+                    <img id="card-image" src="/assets/img/6089337.jpg" alt="Tarjeta de Crédito" style="display: none; width: 100%; max-width: 500px; margin-top: 0px;">
+                </div>
+
+                <button type="submit">Realizar Pago</button>
+                <p id="payment-success" class="success-message"></p>
+                <p id="payment-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/payment-type.js"></script>
+</body>
+</html>
