@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Estudiantes</title>
-    <link rel="stylesheet" href="assets/css/students-reg.css">
+    <link rel="stylesheet" href="/assets/css/students-reg.css">
 </head>
 <body>
     <div class="container">
@@ -27,17 +27,38 @@
                 <input type="email" id="student-email" required>
 
                 <label for="student-grade">Grado:</label>
-                <input type="text" id="student-grade" required>
+                <select id="student-grade" required>
+                    <option value="">Seleccione un grado</option>
+                    <option value="1">1er Grado</option>
+                    <option value="2">2do Grado</option>
+                    <option value="3">3er Grado</option>
+                    <option value="4">4to Grado</option>
+                    <option value="5">5to Grado</option>
+                    <option value="6">6to Grado</option>
+                    <option value="7">7mo Grado</option>
+                    <option value="8">8vo Grado</option>
+                </select>                   
+                   <p></p> 
 
                 <label for="student-section">Sección:</label>
-                <input type="text" id="student-section" required>
-
+                <select id="student-section" required>
+                    <option value="">selecione una sección</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                <p></p>
                 <button type="submit">Registrar Estudiante</button>
                 <p id="student-register-success" class="success-message"></p>
                 <p id="student-register-error" class="error-message"></p>
             </form>
         </div>
     </div>
+    <footer class="container bg-body-secondary p-5">
+        <p class="float-end"><a href="#">Arriba</a></p>
+        <p id="pf">&copy; 1950–2024 Andes School &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> - Hecho con &#128155 & &#x1F4AA por JNIC</p>
+    </footer> 
+    <!--Fin Footer--> 
     <script src="assets/js/students-reg.js"></script>
 </body>
 </html>
