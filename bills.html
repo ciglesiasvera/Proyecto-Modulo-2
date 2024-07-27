@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bills.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+          
+    <h2>Recibos de Pago</h2>
+    <form id="payment-form">
+        <div class="form-group">
+            <label for="student">Seleccionar Estudiante:</label>
+            <select id="student" required>
+                <option value="">Seleccione un estudiante</option>
+                <option value="Juan Espinoza">Juan Espinoza</option>
+                <option value="Celeste Riquelme">Celeste Riquelme</option>
+                <option value="Margarita Sánchez">Margarita Sánchez</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="concept">Seleccionar Concepto de Pago:</label>
+            <select id="concept" required>
+                <option value="">Seleccione un concepto</option>
+                <option value="matricula">Matrícula</option>
+                <option value="mensualidad">Mensualidad</option>
+                <option value="cuota de curso">Cuota curso</option>
+                <option value="materiales">Materiales</option>
+                
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amount">Monto a Pagar:</label>
+            <input type="text" id="amount" required readonly>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="showPreview()">Vista Previa</button>
+            <button type="submit">Confirmar Pago</button>
+        </div>
+    </form>
+    <div class="preview" id="receipt-preview" style="display: none;">
+        <h3>Vista Previa del Recibo</h3>
+        <p id="preview-student"></p>
+        <p id="preview-concept"></p>
+        <p id="preview-amount"></p>
+    </div>
+</div>
+</div>
+
+
+</body>
+<script src="assets/js/bills.js"></script>
+</html>
